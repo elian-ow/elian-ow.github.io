@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elián's links</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/135343836?v=4"> 
+    
+    <style>
+        :root {
+            /* catppuccin ftw! */
+            --ctp-base: #24273A;
+            --ctp-mantle: #1E202E;
+            --ctp-crust: #181926;
+            --ctp-surface0: #363A4F;
+            --ctp-surface1: #494D64;
+            --ctp-surface2: #5B6078;
+            --ctp-text: #CAD3F5;
+            --ctp-subtext0: #A5ADCB;
+            --ctp-mauve: #C6A0F6;
+            --ctp-pink: #F5C2E7;
+            --ctp-lavender: #B7BDF8;
+            --ctp-sapphire: #7DC4E4;
+
+            --background-color: var(--ctp-base);
+            --text-color: var(--ctp-text);
+
+            --button-main-color: var(--ctp-mauve);
+            --button-hover-fill-color: var(--ctp-mauve);
+            --button-text-on-fill: var(--ctp-text);
+
+            --border-radius: 12px;
+            --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            font-family: 'Atkinson Hyperlegible Next', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .profile-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--button-main-color);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: var(--text-color);
+            font-size: 2.2em;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            color: var(--ctp-subtext0);
+            margin-bottom: 20px;
+        }
+
+        .links-container {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 25px;
+            background-color: transparent;
+            border: 2px solid var(--button-main-color);
+            color: var(--button-main-color);
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            font-size: 1.15em;
+            font-weight: 600;
+            box-shadow: var(--box-shadow);
+        }
+
+        .link-button:hover {
+            background-color: var(--button-hover-fill-color);
+            color: var(--button-text-on-fill);
+            transform: translateY(-3px);
+        }
+
+        .footer-text {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: var(--ctp-subtext0);
+        }
+
+        /* Basic responsiveness */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .tagline {
+                font-size: 1em;
+            }
+            .link-button {
+                font-size: 1.05em;
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <img src="https://avatars.githubusercontent.com/u/135343836?v=4" alt="Elián's Profile Picture" class="profile-pic">
+        <h1>Elián</h1>
+        <p class="tagline">bi bi bi! 
+        ✌️ ya lit • tech • music
+        </p>
+    </div>
+
+    <div class="links-container">
+        <a href="https://bsky.app/profile/elian-ow.bsky.social" target="_blank" class="link-button">
+            bluesky
+        </a>
+        <a href="https://youtube.com/@elián_ow" target="_blank" class="link-button">
+            youtube
+        </a>
+        <a href="https://www.wattpad.com/user/elian_ow" target="_blank" class="link-button">
+            wattpad
+        </a>
+        <a href="https://github.com/elian-ow" target="_blank" class="link-button">
+            github
+        </a>
+        <a href="https://archiveofourown.org/users/elian_ow" target="_blank" class="link-button">
+            ao3
+        </a>
+        <a href="https://dqj.bio.link" target="_blank" class="link-button">
+            DQJ
+        </a>
+        </div>
+
+    <p class="footer-text">
+        by elián - made with pride :)
+    </p>
+</body>
+</html>
